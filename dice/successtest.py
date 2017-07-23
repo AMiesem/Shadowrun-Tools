@@ -36,6 +36,7 @@ class SuccessTest(Dice):
 
     @pool.setter
     def pool(self, pool):
+        '''Sets pool and computes glitch threshold while doing so'''
         self._pool = pool
         self.glitch_threshold = int(math.ceil((self.pool/2)))
 
@@ -56,7 +57,10 @@ class SuccessTest(Dice):
         self.edge = edge_test
 
     def rollSingleTest(self):
-        '''single dice component of test'''
+        """single dice component of test
+
+        returns typle:
+        (result INT, hit/miss STR)"""
         DIFFICULTY = 4
         result = self.roll()
         outcome = ''
@@ -72,7 +76,13 @@ class SuccessTest(Dice):
     def rollTest(self):
         """Roll the number of dice in a pool, and return a tuple consisting
         of the final result (True = hit, False=miss), a crtitical glitch flag,
-        and a results array"""
+        and a results array
+
+        returns tuple:
+            (result BOOL,
+            glitch BOOL,
+            critical_glitch BOOL,
+            results SORTED INT LIST)"""
         self.clear()
         self.results_pool = []
         self.outcome = {'hit': 0,'glitch': 0,'miss': 0}
