@@ -8,6 +8,7 @@ This relies on the SuccessTest class in the dice module."""
 
 #standard library modules
 import tkinter as tk
+import logging
 #custom module
 from dice.successtest import SuccessTest
 
@@ -17,14 +18,18 @@ __credits__ = "Andrew Miesem"
 __version__ = "0.1"
 __email__ = "andrew.miesem@gmail.com"
 
-def placeholder():
+# set up logging
+logging.basicConfig(filename='srdice.log',level=logging.DEBUG,format='%(asctime)s [%(levelname)s] %(message)s')
+logging.debug('-'*40)
+logging.debug('srdice -- development version STARTED')
+
+def placeholder(caller):
     """placeholder functio until individual functions are built"""
-    print('placeholder event')
+    message = 'placeholder event fired from {}'.format(caller)
+    logging.debug(message)
+    print(message)
 
-def file_reset():
-    pass
-
-roll_test = placeholder()
+file_reset = roll_test = placeholder('roll_test')
 
 if __name__ == '__main__':
     pass
