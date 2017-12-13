@@ -1,0 +1,38 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Dice	dice/dice.py	/^class Dice:$/;"	c
+DiceTests	tests/srDiceTest.py	/^class DiceTests(unittest.TestCase):$/;"	c
+EDGE	successTestRoller.py	/^EDGE = False$/;"	v
+POOL	successTestRoller.py	/^POOL = 5$/;"	v
+ROLLS	successTestRoller.py	/^ROLLS = 5$/;"	v
+SuccessTest	dice/successtest.py	/^class SuccessTest(Dice):$/;"	c
+THRESHOLD	successTestRoller.py	/^THRESHOLD = st.AVERAGE$/;"	v
+__all__	dice/__init__.py	/^__all__ = ['dice','successtest']/;"	v
+__init__	dice/dice.py	/^    def __init__(self, rolls=1, sides=6, add=0):$/;"	m	class:Dice
+__init__	dice/successtest.py	/^    def __init__(self, pool=5, threshold=2, edge_test=False):$/;"	m	class:SuccessTest
+clear	dice/successtest.py	/^    def clear(self):$/;"	m	class:SuccessTest
+col1	successTestRoller.py	/^    col1 = '{:>5} {:>15} {:^6} '$/;"	v
+cols	successTestRoller.py	/^    cols = '{:2} '$/;"	v
+glitch_txt	successTestRoller.py	/^        glitch_txt = 'NO'$/;"	v
+glitch_txt	successTestRoller.py	/^        glitch_txt = 'YES'$/;"	v
+hit_count	successTestRoller.py	/^    hit_count =rolls.count(5) + rolls.count(6)$/;"	v
+pool	dice/successtest.py	/^    def pool(self):$/;"	m	class:SuccessTest
+pool	dice/successtest.py	/^    def pool(self, pool):$/;"	m	class:SuccessTest
+roll	dice/dice.py	/^    def roll(self):$/;"	m	class:Dice
+rollSingleTest	dice/successtest.py	/^    def rollSingleTest(self):$/;"	m	class:SuccessTest
+rollTest	dice/successtest.py	/^    def rollTest(self):$/;"	m	class:SuccessTest
+setAdd	dice/dice.py	/^    def setAdd(self, add):$/;"	m	class:Dice
+setDice	dice/dice.py	/^    def setDice(self, rolls, sides, add):$/;"	m	class:Dice
+setEdgeTest	dice/successtest.py	/^    def setEdgeTest(self, edge_test):$/;"	m	class:SuccessTest
+setRolls	dice/dice.py	/^    def setRolls(self, rolls):$/;"	m	class:Dice
+setSides	dice/dice.py	/^    def setSides(self, sides):$/;"	m	class:Dice
+setUp	tests/srDiceTest.py	/^    def setUp(self):$/;"	m	class:DiceTests
+setupTest	dice/successtest.py	/^    def setupTest(self, pool, threshold, edge_test=False):$/;"	m	class:SuccessTest
+st	successTestRoller.py	/^st = SuccessTest()$/;"	v
+tearDown	tests/srDiceTest.py	/^    def tearDown(self):$/;"	m	class:DiceTests
+template	successTestRoller.py	/^template = "{:^5} {:^15} {:^6} {:<40}"$/;"	v
+test_base_dice_roll	tests/srDiceTest.py	/^    def test_base_dice_roll(self):$/;"	m	class:DiceTests

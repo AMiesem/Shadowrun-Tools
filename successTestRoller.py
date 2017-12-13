@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 #simple program to roll success tests and display them in a table
 
 from dice.successtest import SuccessTest
