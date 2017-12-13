@@ -7,24 +7,38 @@
 Dice	dice/dice.py	/^class Dice:$/;"	c
 DiceTests	tests/srDiceTest.py	/^class DiceTests(unittest.TestCase):$/;"	c
 EDGE	successTestRoller.py	/^EDGE = False$/;"	v
+EDGE_DEFAULT	srRoller.py	/^EDGE_DEFAULT = False$/;"	v
+GEOMETRY	srRoller.py	/^GEOMETRY = str(WIN_MINX) + "x" + str(WIN_MINY)$/;"	v
+POOL	srRoller.py	/^POOL = 5$/;"	v
 POOL	successTestRoller.py	/^POOL = 5$/;"	v
 ROLLS	successTestRoller.py	/^ROLLS = 5$/;"	v
 SuccessTest	dice/successtest.py	/^class SuccessTest(Dice):$/;"	c
+THRESHOLD	srRoller.py	/^THRESHOLD = st.AVERAGE$/;"	v
 THRESHOLD	successTestRoller.py	/^THRESHOLD = st.AVERAGE$/;"	v
+WIN_MINX	srRoller.py	/^WIN_MINX = 440$/;"	v
+WIN_MINY	srRoller.py	/^WIN_MINY = 420$/;"	v
 __all__	dice/__init__.py	/^__all__ = ['dice','successtest']/;"	v
+__author__	srRoller.py	/^__author__ = "Andrew Miesem"$/;"	v
+__credits__	srRoller.py	/^__credits__ = "Andrew Miesem"$/;"	v
+__email__	srRoller.py	/^__email__ = "andrew.miesem@gmail.com"$/;"	v
 __init__	dice/dice.py	/^    def __init__(self, rolls=1, sides=6, add=0):$/;"	m	class:Dice
 __init__	dice/successtest.py	/^    def __init__(self, pool=5, threshold=2, edge_test=False):$/;"	m	class:SuccessTest
+__version__	srRoller.py	/^__version__ = "0.1"$/;"	v
 clear	dice/successtest.py	/^    def clear(self):$/;"	m	class:SuccessTest
 col1	successTestRoller.py	/^    col1 = '{:>5} {:>15} {:^6} '$/;"	v
 cols	successTestRoller.py	/^    cols = '{:2} '$/;"	v
+file_reset	srRoller.py	/^file_reset = placeholder('file_reset')$/;"	v
 glitch_txt	successTestRoller.py	/^        glitch_txt = 'NO'$/;"	v
 glitch_txt	successTestRoller.py	/^        glitch_txt = 'YES'$/;"	v
 hit_count	successTestRoller.py	/^    hit_count =rolls.count(5) + rolls.count(6)$/;"	v
+placeholder	srRoller.py	/^def placeholder(caller):$/;"	f
 pool	dice/successtest.py	/^    def pool(self):$/;"	m	class:SuccessTest
 pool	dice/successtest.py	/^    def pool(self, pool):$/;"	m	class:SuccessTest
 roll	dice/dice.py	/^    def roll(self):$/;"	m	class:Dice
 rollSingleTest	dice/successtest.py	/^    def rollSingleTest(self):$/;"	m	class:SuccessTest
 rollTest	dice/successtest.py	/^    def rollTest(self):$/;"	m	class:SuccessTest
+roll_test	srRoller.py	/^roll_test = placeholder('roll_test')$/;"	v
+root	srRoller.py	/^    root = Tk()$/;"	v
 setAdd	dice/dice.py	/^    def setAdd(self, add):$/;"	m	class:Dice
 setDice	dice/dice.py	/^    def setDice(self, rolls, sides, add):$/;"	m	class:Dice
 setEdgeTest	dice/successtest.py	/^    def setEdgeTest(self, edge_test):$/;"	m	class:SuccessTest
@@ -32,6 +46,8 @@ setRolls	dice/dice.py	/^    def setRolls(self, rolls):$/;"	m	class:Dice
 setSides	dice/dice.py	/^    def setSides(self, sides):$/;"	m	class:Dice
 setUp	tests/srDiceTest.py	/^    def setUp(self):$/;"	m	class:DiceTests
 setupTest	dice/successtest.py	/^    def setupTest(self, pool, threshold, edge_test=False):$/;"	m	class:SuccessTest
+sr	xtest.py	/^sr = successtest.SuccessTest()$/;"	v
+st	srRoller.py	/^st = SuccessTest()$/;"	v
 st	successTestRoller.py	/^st = SuccessTest()$/;"	v
 tearDown	tests/srDiceTest.py	/^    def tearDown(self):$/;"	m	class:DiceTests
 template	successTestRoller.py	/^template = "{:^5} {:^15} {:^6} {:<40}"$/;"	v

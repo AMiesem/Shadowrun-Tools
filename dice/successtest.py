@@ -37,6 +37,8 @@ class SuccessTest(Dice):
     @pool.setter
     def pool(self, pool):
         '''Sets pool and computes glitch threshold while doing so'''
+        if pool < 1:
+            pool = 1
         self._pool = pool
         self.glitch_threshold = int(math.ceil((self.pool/2)))
 
