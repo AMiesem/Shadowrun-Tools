@@ -4,8 +4,6 @@
 
 import random
 
-
-
 class Dice:
     '''Object that allows for the creation of single or multiple dice and provides the methods for
     rolling and otherwise manipulatig them.'''
