@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 '''Roll dice in a success-test style manner, returning
 the number of "hits" and (optionally) "misses" for a given
 roll.'''

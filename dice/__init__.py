@@ -4,3 +4,4 @@ Supports regular dice rolls as well as success test-style rolls, currently imple
 for Shadowrun 5th ed, but will later be abstracted to handle other games like WoD."""
 
 __all__ = ['dice','successtest']
+
